@@ -1391,6 +1391,8 @@ test("renders report table with report header and report section", async () => {
   expect(containerElem).toBeInTheDocument();
 
   expect(getByTestId("table-header")).toBeInTheDocument();
+  expect(getByTestId("table-heading-1")).toBeInTheDocument();
+  expect(getByTestId("table-heading-1")).toContainHTML("12 June 2024");
 
   expect(getAllByTestId("table-section")).toBeDefined();
 });
