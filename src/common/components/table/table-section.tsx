@@ -1,4 +1,4 @@
-import { Row } from "../../common/constants/types";
+import { Row } from "../../constants/types";
 
 type TableSectionProps = {
   item: Row;

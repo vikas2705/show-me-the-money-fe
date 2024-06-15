@@ -1,4 +1,4 @@
-import { Row, TableProps } from "../../common/constants/types";
+import { Row, TableProps } from "../../constants/types";
 import "./Table.css";
 import TableHeader from "./table-header";
 import TableSection from "./table-section";

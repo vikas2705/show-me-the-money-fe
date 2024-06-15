@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Table from "./components/table";
+import Table from "./common/components/table";
 import { SheetData } from "./common/constants/types";
 import { getBalanceSheetData } from "./common/services/balance-sheet";
 
