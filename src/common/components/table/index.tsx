@@ -1,5 +1,5 @@
 import { Row, TableProps } from "../../constants/types";
-import "./Table.css";
+import "../table/table.css";
 import TableHeader from "./table-header";
 import TableSection from "./table-section";
 
