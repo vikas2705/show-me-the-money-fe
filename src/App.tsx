@@ -30,9 +30,17 @@ function App() {
   const { ReportTitles: reportTitles = [], Rows: rows = [] } = data;
 
   return (
-    <div className="container">
-      {reportTitles.map((reportTitle) => {
-        return <h2 className="heading">{reportTitle}</h2>;
+    <div className="container" data-testid="container">
+      {reportTitles.map((reportTitle, index) => {
+        return (
+          <h2
+            className="heading"
+            data-testid={`report-title-${index}`}
+            key={index}
+          >
+            {reportTitle}
+          </h2>
+        );
       })}
       <Table data={rows ?? []} />
     </div>

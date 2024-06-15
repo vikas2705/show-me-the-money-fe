@@ -5,7 +5,7 @@ import TableSection from "./table-section";
 
 const Table: React.FC<TableProps> = ({ data }) => {
   return (
-    <table className="table">
+    <table className="table" data-testid="table-container">
       {data?.length > 0 && (
         <>
           {data.map((item: Row, index: number) => {

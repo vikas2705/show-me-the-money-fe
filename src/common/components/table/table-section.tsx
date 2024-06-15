@@ -7,7 +7,7 @@ type TableSectionProps = {
 const TableSection: React.FC<TableSectionProps> = ({ item }) => {
   const { Title: title, Rows: rows = [] } = item;
   return (
-    <tbody>
+    <tbody data-testid="table-section">
       {title && (
         <tr className="section-header">
           <td className="table-data" colSpan={3}>

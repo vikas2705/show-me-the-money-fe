@@ -6,7 +6,7 @@ type TableHeaderProps = {
 
 const TableHeader: React.FC<TableHeaderProps> = ({ item }) => {
   return (
-    <thead>
+    <thead data-testid="table-header">
       <tr className="tr">
         {item.Cells &&
           item.Cells.length > 0 &&
